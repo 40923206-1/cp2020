@@ -203,8 +203,7 @@ Benjamin Franklin
 <p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>  當然，這會很快變得混亂，所以要小心！</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p><strong>MORE ON DICTIONARY KEYS    有關字典鍵的更多信息</strong></p>
-<p><strong></strong></p>
-<p>  Dictionary keys must be unique. If you try to add an element to your dictionary with the same key, it will overwrite the value previously at that key:</p>
+<p>  Dictionary keys must be unique. If you try to add an element to your dictionary with the same key, it will overwrite the value previously at that key:<br/><strong></strong></p>
 <p><span>  字典鍵必須唯一。</span><span>如果您嘗試使用相同的鍵將元素添加到字典中，它將覆蓋先前在該鍵上的值：</span></p>
 <p><span></span></p>
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">price_dictionary</span><span class="p">[</span><span class="s">"dog food"</span><span class="p">])</span>
@@ -250,36 +249,55 @@ Benjamin Franklin
 <p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>  這些檢查可以與</span><code class="highlighter-rouge">if</code><span><span>語句</span><span>一起使用</span><span>以製作更複雜的程序。</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p><strong>String formatting   字符串格式</strong></p>
-<p><strong></strong></p>
-<p>We’ve talked about strings a lot on this blog:</p>
-<p><span>我們在此博客上討論了很多字符串：</span></p>
+<p>  We’ve talked about strings a lot on this blog:<br/><strong></strong></p>
+<p><span>  我們在此博客上討論了很多字符串：</span></p>
+<ul>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/01/29/01-character-input.html)">Exercise 1 about printing basic strings</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/03/12/06-string-lists.html)">Exercise 6 about turning strings into lists</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2017/01/24/(/exercise/2014/05/21/15-reverse-word-order.html)">Exercise 15 about where `join` statements are introduced</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+</ul>
 <p><span></span></p>
-<p><span>But we want to introduce one more optional concept for this exercise related to string formatting. There are a number of ways to format strings in Python, so I am just going to show you one quick way for a scenario you find yourself in often while programming.</span></p>
-<p><span><span>但是，我們想為此練習引入與字符串格式化有關的另一個可選概念。</span><span>有很多方法可以用Python格式化字符串，因此，我將向您展示一種快速編程的方法，以解決您經常在編程時遇到的情況。</span></span></p>
+<p><span>  But we want to introduce one more optional concept for this exercise related to string formatting. There are a number of ways to format strings in Python, so I am just going to show you one quick way for a scenario you find yourself in often while programming.</span></p>
+<p><span><span>  但是，我們想為此練習引入與字符串格式化有關的另一個可選概念。</span><span>有很多方法可以用Python格式化字符串，因此，我將向您展示一種快速編程的方法，以解決您經常在編程時遇到的情況。</span></span></p>
 <p><span><span></span></span></p>
-<p><span><span>A common scenario is like this: you want to print both a string and a number in the same line using one <code class="highlighter-rouge">print()</code><span><span> </span>statement. You can solve this problem like so:</span></span></span></p>
-<p><span><span><span><span>常見的情況是這樣的：您想使用一個</span><code class="highlighter-rouge">print()</code><span><span>語句</span><span>在同一行中同時打印字符串和數字</span><span>。</span><span>您可以這樣解決此問題：</span></span></span></span></span></p>
+<p><span><span>  A common scenario is like this: you want to print both a string and a number in the same line using one <code class="highlighter-rouge">print()</code><span><span> </span>statement. You can solve this problem like so:</span></span></span></p>
+<p><span><span><span><span>  常見的情況是這樣的：您想使用一個</span><code class="highlighter-rouge">print()</code><span><span>語句</span><span>在同一行中同時打印字符串和數字</span><span>。</span><span>您可以這樣解決此問題：</span></span></span></span></span></p>
 <p><span><span><span><span><span></span></span></span></span></span></p>
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"my number is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s">" and his number is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
 <span class="n">my</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">his</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">10<br/></span></code></pre>
-<p><span><span><span><span><span>But it gets tedious to use <code class="highlighter-rouge">+</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">str()</code><span>. Instead, you can use the<span> </span></span><code class="highlighter-rouge">.format()</code><span><span> </span>method to<span> </span></span><em>cast</em><span><span> </span>(i.e. transform) your number into a string when it gets printed.</span></span></span></span></span></span></p>
-<p><span><span><span><span><span><span><span>但是使用</span><code class="highlighter-rouge">+</code><span><span>和</span><span>會很麻煩</span></span><code class="highlighter-rouge">str()</code><span><span>。</span><span>相反，你可以使用</span></span><code class="highlighter-rouge">.format()</code><span><span>的方法來</span></span><em><span><span>投</span></span></em><span><span>（即變換）你的電話號碼轉換成字符串時，它就會被打印出來。</span></span></span></span></span></span></span></span></p>
+<p><span><span><span><span><span>  But it gets tedious to use <code class="highlighter-rouge">+</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">str()</code><span>. Instead, you can use the<span> </span></span><code class="highlighter-rouge">.format()</code><span><span> </span>method to<span> </span></span><em>cast</em><span><span> </span>(i.e. transform) your number into a string when it gets printed.</span></span></span></span></span></span></p>
+<p><span><span><span><span><span><span><span>  但是使用</span><code class="highlighter-rouge">+</code><span><span>和</span><span>會很麻煩</span></span><code class="highlighter-rouge">str()</code><span><span>。</span><span>相反，你可以使用</span></span><code class="highlighter-rouge">.format()</code><span><span>的方法來</span></span><em><span><span>投</span></span></em><span><span>（即變換）你的電話號碼轉換成字符串時，它就會被打印出來。</span></span></span></span></span></span></span></span></p>
 <p><span><span><span><span><span><span><span><span></span></span></span></span></span></span></span></span></p>
 <pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"my number is {} and his number is {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
 <span class="n">my</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">his</span> <span class="n">number</span> <span class="ow">is</span> <span class="mi">10<br/></span></code></pre>
-<p><span><span><span><span><span><span><span><span>What we are doing is substituting the symbol <code class="highlighter-rouge"><span class="p">{}</span></code><span><span> </span>in the print statement in the string we want to display in the exact place we want the number to go, and use the<span> </span></span><code class="highlighter-rouge">.format()</code><span><span> </span>to pass variables to the<span> </span></span><code class="highlighter-rouge"><span class="p">{}</span></code><span><span> </span>that appear in order. What happens is the variables<span> </span></span><code class="highlighter-rouge">a</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">b</code><span><span> </span>get converted into strings automatically and injected into our<span> </span></span><code class="highlighter-rouge">print</code><span><span> </span>statement cleanly. You can do this with floats, lists, dictionaries, or anything else you want to display.</span></span></span></span></span></span></span></span></span></p>
-<p>我們正在做的是將<code class="highlighter-rouge"><span class="p">{}</span></code>要顯示的字符串中的符號替換為打印語句中要顯示的數字的確切位置，然後使用<code class="highlighter-rouge">.format()</code>將變量傳遞給<code class="highlighter-rouge"><span class="p">{}</span></code>按順序出現的。發生的事情是變量，<code class="highlighter-rouge">a</code>並<code class="highlighter-rouge">b</code>自動將其轉換為字符串並<code class="highlighter-rouge">print</code>乾淨地註入到我們的語句中。您可以使用浮點數，列表，字典或其他任何想要顯示的內容來執行此操作。</p>
+<p><span><span><span><span><span><span><span><span>  What we are doing is substituting the symbol <code class="highlighter-rouge"><span class="p">{}</span></code><span><span> </span>in the print statement in the string we want to display in the exact place we want the number to go, and use the<span> </span></span><code class="highlighter-rouge">.format()</code><span><span> </span>to pass variables to the<span> </span></span><code class="highlighter-rouge"><span class="p">{}</span></code><span><span> </span>that appear in order. What happens is the variables<span> </span></span><code class="highlighter-rouge">a</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">b</code><span><span> </span>get converted into strings automatically and injected into our<span> </span></span><code class="highlighter-rouge">print</code><span><span> </span>statement cleanly. You can do this with floats, lists, dictionaries, or anything else you want to display.</span></span></span></span></span></span></span></span></span></p>
+<p>  我們正在做的是將<code class="highlighter-rouge"><span class="p">{}</span></code>要顯示的字符串中的符號替換為打印語句中要顯示的數字的確切位置，然後使用<code class="highlighter-rouge">.format()</code>將變量傳遞給<code class="highlighter-rouge"><span class="p">{}</span></code>按順序出現的。發生的事情是變量，<code class="highlighter-rouge">a</code>並<code class="highlighter-rouge">b</code>自動將其轉換為字符串並<code class="highlighter-rouge">print</code>乾淨地註入到我們的語句中。您可以使用浮點數，列表，字典或其他任何想要顯示的內容來執行此操作。</p>
 <p></p>
-<p><span>There are a number of different formatting options if you want to get specific about how many decimal points to display, etc., but that is out of the scope of this exercise. If you want to read more about string formatting in Python, you can read about it </span><a href="https://pyformat.info/">on this helpful website that goes into a great amount of detail</a><span>.</span></p>
-<p><span><span>如果要具體說明要顯示的小數點數等，可以使用多種格式設置選項，但這不在本練習的範圍之內。如果您想了解有關Python中字符串格式的更多信息，可以</span><a href="https://pyformat.info/"><span><span>在這個非常有用的網站上進行詳細了解</span></span></a><span><span>。</span></span></span></p>
+<p><span>  There are a number of different formatting options if you want to get specific about how many decimal points to display, etc., but that is out of the scope of this exercise. If you want to read more about string formatting in Python, you can read about it </span><a href="https://pyformat.info/">on this helpful website that goes into a great amount of detail</a><span>.</span></p>
+<p><span><span>  如果要具體說明要顯示的小數點數等，可以使用多種格式設置選項，但這不在本練習的範圍之內。如果您想了解有關Python中字符串格式的更多信息，可以</span><a href="https://pyformat.info/"><span><span>在這個非常有用的網站上進行詳細了解</span></span></a><span><span>。</span></span></span></p>
 <p><strong></strong></p>
 <p><strong>Happy coding!    祝您編碼愉快！</strong></p>
-<p><strong></strong></p>
-<p>Forgot how to <a href="https://www.practicepython.org/about/">submit exercises</a>?    <span>忘記瞭如何</span><a href="https://www.practicepython.org/about/"><span><span>提交練習</span></span></a><span><span>？</span></span></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><br />Exercise 30 (and Solution) Pick Word << <a href='Exercise 30 (and Solution) Pick Word.html'>Previous</a> </div>
+<p>Forgot how to <a href="https://www.practicepython.org/about/">submit exercises</a>?    <span>忘記瞭如何</span><a href="https://www.practicepython.org/about/"><span><span>提交練習</span></span></a><span><span>？</span></span><br/><strong></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><br />Exercise 30 (and Solution) Pick Word << <a href='Exercise 30 (and Solution) Pick Word.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
